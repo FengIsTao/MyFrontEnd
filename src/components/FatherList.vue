@@ -22,6 +22,14 @@ export default {
           name: "经济",
           children: [{ name: "四川成都" }, { name: "四川绵阳" }],
         },
+         {
+          name: "经济大学",
+          children: [{ name: "四川成都" }, { name: "四川绵阳" }],
+        },
+          {
+          name: "经济大学",
+          children: [{ name: "四川成都" }, { name: "四川绵阳" }],
+        },
       ],
     };
   },
