@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <FatherList/>
   </div>
 </template>
 
 <script>
+import FatherList from '@/components/FatherList'
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    FatherList
+  }
 }
 </script>
 
