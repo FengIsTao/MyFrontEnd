@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <FatherDemo2/>
+    <Custom/>
   </div>
 </template>
 
 <script>
-import FatherDemo2 from '@/components/FatherDemo2'
+import Custom from '@/components/Custom'
 export default {
   name: 'App',
   components:{
-   FatherDemo2
+   Custom
   },
 }
 </script>

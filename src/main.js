@@ -4,9 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import {init,bind} from './utils/custom-life-cyle'
+import ElementUI from 'element-ui'
 
 init()
 Vue.config.productionTip = false
+Vue.use(ElementUI)
 
 /* eslint-disable no-new */
 const vm=new Vue({
