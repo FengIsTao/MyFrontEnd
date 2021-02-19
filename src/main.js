@@ -3,13 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import {init,bind} from './utils/custom-life-cyle'
 
+init()
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+const vm=new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>'
 })
+bind(vm)

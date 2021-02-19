@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <FatherList/>
+    <FatherDemo2/>
   </div>
 </template>
 
 <script>
-import FatherList from '@/components/FatherList'
+import FatherDemo2 from '@/components/FatherDemo2'
 export default {
   name: 'App',
   components:{
-    FatherList
-  }
+   FatherDemo2
+  },
 }
 </script>
 
