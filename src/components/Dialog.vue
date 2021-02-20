@@ -1,5 +1,5 @@
 <template>
-  <el-dialog :visible.sync="visibleDialog">
+  <el-dialog :visible.sync="visibleDialog" v-bind="$attrs" v-on="$listeners">
     <!--内容区域的默认插槽-->
     <slot></slot>
     <!--使用弹框的footer插槽添加按钮-->
@@ -19,6 +19,7 @@
 <script>
 export default {
   name: "Dialog",
+  inheritAttrs:false,
   props:{
     visable:{
       type:Boolean,
@@ -30,6 +31,17 @@ export default {
       get(){
         return this.visable
       }
+    },
+    set(val){
+      this.$emit('update:visible',val)
+    }
+  },
+  methods:{
+    $_handleCancel(){
+      this.$emit('cancel')
+    },
+    $_handleConfirm(){
+      this.$emit('confirm')
     }
   }
 };

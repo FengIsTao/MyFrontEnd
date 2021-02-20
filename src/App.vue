@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <Custom/>
+    <LookDialog />
   </div>
 </template>
 
 <script>
-import Custom from '@/components/Custom'
+import LookDialog from "@/components/LookDialog";
 export default {
-  name: 'App',
-  components:{
-   Custom
+  name: "App",
+  components: {
+    LookDialog,
   },
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
